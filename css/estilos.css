@@ -281,30 +281,146 @@ padding: 20px;
 }
 .Imagenesllaveros{
   background-image: url(https://www.lapulga.com.do/f/6813724-2.jpg);
-  height: 300px;
+  height: 500px;
 width: 100%;
   background-size: cover;
   background-position: center;
 }
 .Imagenestarjetas{
   background-image: url(https://ae01.alicdn.com/kf/H3bed9b50e3d547898b4f4be72531060fA/Tarjetas-personalizadas-para-fiestas-postales-de-felicitaci-n-o-invitaci-n-con-sobre-color-borgo-a.jpg);
-    height: 300px;
+    height: 500px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 .Imagenesiman{
   background-image: url(https://www.misregalosconfotos.com/wp-content/uploads/2017/07/Imanes-Personalizados-madera-1-1.jpg);
-    height:300px;
+    height:500px;
     width: 100%;
     background-size: cover;
     background-position: center;
 }
 .imagenTaza{
   background-image: url(http://d3ugyf2ht6aenh.cloudfront.net/stores/001/609/296/products/ddc82a060f6175e2d0b69f32f2a3af4c-thumbnail-560x560-901-dfbb881b0503be34ec16246402640546-640-0.jpg);
-  height: 300px;
+  height: 500px;
   width: 100%;
   background-size: cover;
   background-position: center;
 }
 
+/* Gradientes, Transformaciones, Animaciones */
+
+
+/*.tazas{
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  
+}
+.tazas:hover{
+  -webkit-transform: translateX(20px);
+  transform: translateX(50px);
+}*/
+
+.logo:hover{
+  -webkit-animation: 2s balanceo 1;
+}
+@-webkit-keyframes balanceo{
+  20%{
+      -webkit-transform: scale(0.9) rotate(-3deg);
+  }
+  30%, 50%, 70%, 90%{
+      -webkit-transform: scale(1.1) rotate(3deg);
+  }
+  40%, 60%, 80%{
+      -webkit-transform: scale(1.1) rotate(-3deg);
+  }
+}
+
+.tazas:hover{
+  -webkit-animation: 1s dobleclick 1;
+}
+@-webkit-keyframes dobleclick{
+  40%{
+      -webkit-transform: scale(1.1);
+  }
+  20%, 60%{
+      -webkit-transform: scale(0.8);
+  }
+}
+.imanes:hover
+{
+	animation: 1s vibrar infinite;
+}
+
+@keyframes vibrar
+{
+	5%, 25%, 45%, 65%, 85% { transform: translateX(-10px); }
+	15%, 35%, 55%, 75%, 95% { transform: translateX(10px); }
+}
+
+body{
+  background-image:  repeating-linear-gradient(-45deg, transparent, transparent 5px, rgba(143, 77, 63, 0.25) 5px,
+  rgba(143, 77, 63, 0.25) 10px);
+}
+
+.contacto{background-color: rgb(241, 222, 222);
+  transform: scale(1.2);
+  transform: scale(1.3);
+  transform: scale(0.2);
+  transform: scale(-1.2);
+  transform: scaleX(1);
+  transform: scaleY(1);
+  transform: scale(1.2, 1);
+  transform: scale(ejeY)
+} 
+
+.llaveros{
+  background-color: rgb(233, 216, 220);
+  transform: skewX(5deg);
+}
+
+.logo:hover{
+  -webkit-animation: 1s giro infinite;
+  -webkit-backface-visibility: visible;
+}
+
+@-webkit-keyframes giro{
+  40%{
+      -webkit-transform: perspective(300px)
+                          translateZ(120px)
+                          rotateY(170deg);
+  }
+  50%{
+      -webkit-transform: perspective(300px)
+                          translateZ(120px)
+                          rotateY(190deg);
+  }
+  80%{
+      -webkit-transform: perspective(300px)
+                          translateZ(0px)
+                          rotateY(360deg);
+  }
+  100%{
+      -webkit-transform: perspective(300px)
+                          rotateY(360deg);
+  }
+}
+
+
+nav
+{
+	height: 40px;
+}
+
+li
+{
+	display: inline-block;
+	text-decoration: none;
+	margin: 0 10px;
+	padding: 5px;
+	transition-duration: 0.2s;
+}
+
+li:nth-of-type(1):hover { border-bottom: 3px dotted rgb(10, 180, 81); }
+li:nth-of-type(2):hover { border-bottom: 3px solid rgb(224, 10, 178); }
+li:nth-of-type(3):hover { border-bottom: 3px solid rgb(8, 229, 245); }
