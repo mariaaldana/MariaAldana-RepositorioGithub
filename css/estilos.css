@@ -308,7 +308,9 @@ width: 100%;
   background-position: center;
 }
 
-/* Gradientes, Transformaciones, Animaciones */
+
+/* Animaciones, Gradientes, Trasformaciones */
+
 
 
 .logo:hover{
@@ -325,6 +327,8 @@ width: 100%;
       -webkit-transform: scale(1.1) rotate(-3deg);
   }
 }
+
+/* Gradientes, Transformaciones, Animaciones */
 
 .tazas:hover{
   -webkit-animation: 1s dobleclick 1;
